@@ -11,7 +11,7 @@ interface CounterItemProps {
 const CounterItem = ({ end, label, suffix = "+", icon: Icon }: CounterItemProps) => {
   const [count, setCount] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
-  const ref = useRef < HTMLDivElement > (null);
+  const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -37,14 +37,9 @@ const CounterItem = ({ end, label, suffix = "+", icon: Icon }: CounterItemProps)
   useEffect(() => {
     if (!isVisible) return;
 
-    const isSmall = end <= 30;
-
-    const baseDuration = isSmall ? 800 : 2800;
-    const duration = isSmall
-      ? Math.max(500, Math.min(1200, baseDuration + end * 10))
-      : Math.max(2500, Math.min(3500, baseDuration + end / 10));
-
-    const steps = isSmall ? Math.max(30, end) : Math.max(60, Math.floor(end / 2));
+    const baseDuration = 2800;
+    const duration = Math.max(2500, Math.min(3400, baseDuration + (end / 10)));
+    const steps = Math.max(60, Math.floor(end / 2));
     const increment = end / steps;
     const stepDuration = duration / steps;
 
