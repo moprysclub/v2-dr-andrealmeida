@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+  <title>Dr. Andre Almeida | Cirurgião Bucomaxilofacial e Periodontista em Angra dos Reis</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Dr. Andre Almeida 🔹 CRO/RJ 41279 | Cirurgião Bucomaxilofacial e Periodontista em Angra dos Reis. Especialista em implantes dentários, extração de sisos, reabilitação oral e tratamento de gengiva." />
+  <meta name="keywords"
+    content="dentista Angra dos Reis, implantes dentários, cirurgia bucomaxilofacial, periodontista RJ, reabilitação oral, clareamento dental, tratamento de gengiva, extração de sisos" />
+  <meta name="author" content="Dr. Andre Almeida 🔹 CRO/RJ 41279" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#004AAD" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://drandrealmeida.kevins.club/" />
+
+  <!-- DNS Prefetch otimizado -->
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//fonts.gstatic.com">
+  
+  <!-- Preconnect crítico para Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- CSS CRÍTICO INLINE - apenas o necessário para primeiro paint do Hero -->
+  <style>
+    /* Reset básico e tipografia crítica */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    html { font-size: 16px; }
+    
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 400;
+      line-height: 1.6;
+      color: #333;
+      background-color: #fff;
+    }
+
+    /* Container crítico */
+    .container {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    /* Hero section crítico */
+    #home {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 4rem;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    /* Gradiente crítico */
+    .gradient-hero {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(0, 74, 173, 0.8) 0%, rgba(0, 0, 0, 0.4) 100%);
+    }
+
+    /* H1 crítico - elemento LCP */
+    h1 {
+      font-size: 2.25rem; /* 36px base */
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+      color: white;
+    }
+
+    /* Responsivo do H1 */
+    @media (min-width: 768px) {
+      h1 { font-size: 3.75rem; } /* 60px md+ */
+    }
+
+    /* Gradient text crítico */
+    .gradient-text {
+      background: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* Utility classes críticas */
+    .relative { position: relative; }
+    .z-10 { z-index: 10; }
+    .text-white { color: white; }
+    .text-left { text-align: left; }
+    .max-w-2xl { max-width: 42rem; }
+    .mb-6 { margin-bottom: 1.5rem; }
+    
+    /* Fade in básico sem delay para LCP */
+    .fade-in-wrapper {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Esconde conteúdo não crítico inicialmente */
+    .non-critical { opacity: 0; }
+  </style>
+
+  <!-- Google Fonts otimizada - apenas pesos essenciais -->
+  <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" 
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+  </noscript>
+
+  <!-- CSS principal não crítico -->
+  <link rel="preload" href="/src/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/src/index.css"></noscript>
+
+  <!-- Open Graph -->
+  <meta property="og:title"
+    content="Dr. Andre Almeida | Cirurgião Bucomaxilofacial e Periodontista em Angra dos Reis" />
+  <meta property="og:description"
+    content="Especialista em Implantes, Cirurgias Bucomaxilofaciais, Periodontia e Reabilitação Oral. Atendimento em Angra dos Reis - RJ." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://drandrealmeida.kevins.club/" />
+  <meta property="og:image"
+    content="https://drandrealmeida.kevins.club/dr-andre-almeida-cirurgiao-dentista-bucomaxilo-e-periodontista-angra-dos-reis.jpeg" />
+  <meta property="og:image:alt" content="Dr. Andre Almeida - Cirurgião Bucomaxilofacial e Periodontista em Angra dos Reis" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:site_name" content="Clínica Odontológica Dr. Andre Almeida" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title"
+    content="Dr. Andre Almeida | Cirurgião Bucomaxilofacial e Periodontista em Angra dos Reis" />
+  <meta name="twitter:description"
+    content="Implantes, cirurgias de sisos, reabilitação oral e periodontia com tecnologia e previsibilidade. Atendimento em Angra dos Reis - RJ." />
+  <meta name="twitter:image"
+    content="https://drandrealmeida.kevins.club/dr-andre-almeida-cirurgiao-dentista-bucomaxilo-e-periodontista-angra-dos-reis.jpeg" />
+  <meta name="twitter:image:alt"
+    content="Dr. Andre Almeida - Especialista em Odontologia em Angra dos Reis" />
+
+  <!-- Local SEO Schema (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "Dr. Andre Almeida",
+    "image": "https://drandrealmeida.kevins.club/dr-andre-almeida-cirurgiao-dentista-bucomaxilo-e-periodontista-angra-dos-reis.jpeg",
+    "description": "Cirurgião Bucomaxilofacial e Periodontista - CRO/RJ 41279. Especialista em implantes, cirurgias, reabilitação oral e tratamento de gengiva em Angra dos Reis.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Angra dos Reis",
+      "addressRegion": "RJ",
+      "addressCountry": "BR"
+    },
+    "url": "https://drandrealmeida.kevins.club/",
+    "telephone": "+55-24-99999-0513"
+  }
+  </script>
+
+  <!-- Script para revelar conteúdo não crítico após load -->
+  <script>
+    window.addEventListener('load', function() {
+      const nonCritical = document.querySelectorAll('.non-critical');
+      nonCritical.forEach(el => {
+        el.style.transition = 'opacity 0.3s ease-in-out';
+        el.style.opacity = '1';
+      });
+    });
+  </script>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx" defer></script>
+</body>
+
+</html>
